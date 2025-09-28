@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,14 @@
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "nodemailer": "^7.0.3"
-  }
+    "nodemailer": "^7.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ananthan555/flight2backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ananthan555/flight2backend/issues"
+  },
+  "homepage": "https://github.com/Ananthan555/flight2backend#readme"
 }
