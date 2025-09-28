@@ -8,3 +8,156 @@ Thumbs.db
 
 # Ignore local config files
 .env
+<style>
+    body {
+      background: #f4f8fb;
+      font-family: 'Quicksand', Arial, sans-serif;
+    }
+    .center-viewport {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .auth-card {
+      border-radius: 2rem;
+      box-shadow: 0 6px 32px 0 rgba(0,0,0,0.09);
+      padding: 2.5rem 2rem 2rem 2rem;
+      max-width: 370px;
+      width: 100%;
+      background: #fff;
+      margin: auto;
+      animation: fadeIn 1s;
+    }
+    .auth-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #1565c0;
+    }
+    .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+    .nav-link.active {
+      color: #1565c0 !important;
+      font-weight: bold;
+      border-bottom: 2px solid #1565c0;
+    }
+    .section {
+      display: none;
+      animation: fadeIn 0.7s;
+    }
+    .section.active {
+      display: block;
+    }
+    .home-cards-row {
+      gap: 1.2rem;
+      margin-bottom: 2.2rem;
+    }
+    .service-card {
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 4px 24px 0 rgba(21,101,192,0.07);
+      transition: transform .3s, box-shadow .3s;
+      background: #fff;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      cursor: pointer;
+    }
+    .service-card:hover {
+      transform: translateY(-8px) scale(1.04);
+      box-shadow: 0 12px 32px 0 rgba(21,101,192,0.13);
+    }
+    .service-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      opacity: 0.92;
+    }
+    .service-card .card-body {
+      position: relative;
+      z-index: 2;
+      background: rgba(255,255,255,0.92);
+      border-bottom-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+      padding-top: 1.2rem;
+    }
+    .service-card h5 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #1565c0;
+      margin-bottom: 0.5rem;
+    }
+    .service-quote {
+      font-size: 1.03rem;
+      color: #333;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+    .booking-card {
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 24px 0 rgba(21,101,192,0.07);
+      background: #fff;
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .booking-card h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: #1565c0;
+      margin-bottom: 1.2rem;
+    }
+    .form-control, .form-select {
+      border-radius: 1rem;
+    }
+    .modal-content {
+      border-radius: 1.2rem;
+    }
+    .ticket-card {
+      border-radius: 1.2rem;
+      box-shadow: 0 2px 12px 0 rgba(21,101,192,0.09);
+      margin-bottom: 1.2rem;
+      background: #fff;
+      font-size: 1.05rem;
+    }
+    @media (max-width: 992px) {
+      .home-cards-row {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .service-card {
+        min-height: 270px;
+      }
+    }
+    @media (max-width: 600px) {
+      .auth-card {
+        padding: 1.2rem 0.5rem;
+      }
+      .booking-card {
+        padding: 1rem 0.5rem;
+      }
+      .service-card img {
+        height: 110px;
+      }
+      .service-card {
+        min-height: 190px;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
